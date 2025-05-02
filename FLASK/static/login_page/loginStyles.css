@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(35, 35, 35);
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: rgb(54, 54, 54); 
+    width: 90%;
+    max-width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login input {
+    border: none;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: -10px;
+    font-size: 17px;
+    width: 200px;
+    height: 25px;
+}
+
+.login input:focus {
+    outline: 2px solid white;
+}
+
+.login input::placeholder {
+    color: rgb(155, 155, 155);
+    font-size: 15px;
+}
+
+.title {
+    font-size: 50px;
+    position: relative;
+    top: -20px;
+    font-weight: bold;  
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 3px;
+}
+
+.submit {
+    border: none;
+    color: white;
+    background-color: lightgreen;
+    border-radius: 1000px;
+    font-size: 20px;
+    width: 175px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit:hover {
+    background-color: rgb(0, 255, 0);
+}
+.inputWrapper {
+    position: relative;
+}
+
+.inputWrapper input {
+    padding-left: 40px; 
+}
+
+.inputWrapper .user-icon {
+    position: absolute;
+    top: 55%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+
+
+.passwordWrapper {
+    position: relative;
+}
+
+.passwordWrapper input {
+    padding-left: 40px;
+}
+
+.passwordWrapper .password-icon {
+    position: absolute;
+    top: 55%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+
+.error-wrapper {
+    position: relative;
+}
+
+.error-wrapper p {
+    color: red;
+    padding-left: 40px;
+    font-size: 18px;
+    margin: 0;
+}
+
+.error-wrapper .error-icon {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+
+.hidden {
+    display: none;
+}

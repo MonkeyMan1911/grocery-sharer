@@ -1,0 +1,28 @@
+{
+    "lists": [
+        {
+            "users": ["admin", "user"],
+            "title": "My List",
+            "date": "04.30.25",
+            "items": [
+                {
+                    "item_name": "Item 1",
+                    "quantity": 2,
+                    "checked": false
+                }
+            ]
+        },
+        {
+            "users": ["admin"],
+            "title": "My List2",
+            "date": "04.30.25",
+            "items": [
+                {
+                    "item_name": "Item 1",
+                    "quantity": 2,
+                    "checked": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="static/dashboard/dashboardStyles.css">
+</head>
+<body>
+    <h1 class="title">Grocery lists</h1>
+
+    <div class="lists">
+        <div class="list">
+            <div class="list-header">
+                <h2 class="list-title">List 1</h2>
+                <h2 class="list-date">04.28.25</h2>
+            </div>
+            <hr class="list-hr">
+            <div class="list-items">
+                <div class="item-div">
+                    <button class="item-checkButton" data-checked="false" onclick="clickCheckbox(this)"></button>
+                    <p class="item">Hello</p>
+                    <p class="item-quantity">x3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="create-list">+
+        <span class="create-list-tooltip">New List</span>
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="/static/dashboard/checkbox.js"></script>
+    <script src="/static/dashboard/loadLists.js"></script>
+</body>
+</html>
