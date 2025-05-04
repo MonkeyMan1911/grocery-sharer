@@ -1,0 +1,59 @@
+.deleteConfirmDiv {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(67, 67, 67);
+    height: 250px;
+    width: 400px;
+    visibility: hidden;
+    font-family: 'Arial', sans-serif;
+}
+.deleteConfirmDiv:has(.confirmation-header) {
+    visibility: visible;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.confirmation-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 190px;
+}
+
+.confirmation-footer button {
+    height: 60px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    font-size: 19px;
+    color: white;
+}
+
+.confirm-delete {
+    background-color: red;
+}
+.cancel-delete {
+    background-color: lightgreen;
+}
+
+.confirmation-title {
+    color: white;
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+}

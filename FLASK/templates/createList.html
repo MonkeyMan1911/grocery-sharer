@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="static/dashboard/create_list/createListStyles.css">
+</head>
+<body>
+    <div class="create-list-form">
+        <h1 class="title">Create List</h1>
+        <hr>
+        <input type="text" class="list-name" placeholder="List Name">
+        <div class="add-item-form">
+            <hr>
+            <input type="text" class="item-name" placeholder="Item Name">
+            <input type="number" class="item-quantity" placeholder="Item Quantity">
+            <hr>
+        </div>
+        <button class="add-item">Add Item</button>
+        <div class="actions">
+            <button class="save">Save</button>
+            <button class="cancel" onclick="window.location.href='/dashboard'">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

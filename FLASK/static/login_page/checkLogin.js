@@ -20,6 +20,7 @@ function login(username, password) {
     .done((response) => {
         console.log("Data received:", response.result);
         if (response.result === true) {
+            sessionStorage.setItem("username", username);
             window.location.href = "/dashboard";
         }
         if (response.result === false) {
