@@ -1,11 +1,15 @@
 {
-    "logins" : [
+    "logins": [
         {
             "username": "admin",
             "password": "admin123"
         },
         {
             "username": "user",
+            "password": "user123"
+        },
+        {
+            "username": "user2",
             "password": "user123"
         }
     ]

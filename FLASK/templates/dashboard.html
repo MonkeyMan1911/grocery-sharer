@@ -7,12 +7,20 @@
 
     <link rel="stylesheet" href="static/dashboard/dashboardStyles.css">
     <link rel="stylesheet" href="static/dashboard/confirmDelete.css">
+    <link rel="stylesheet" href="static/dashboard/alertStyles.css">
+    <link rel="stylesheet" href="static/dashboard/shareManagerStyles.css">
 </head>
 <body>
-    <h1 class="title">Grocery lists</h1>
 
+    <div class="header">
+        <h1 class="title">Grocery lists</h1>
+        <button class="notification-icon">
+            <img src="/static/dashboard/images/read.svg" alt="Icon">
+        </button>
+    </div>
+    
     <div class="lists">
-        <div class="list List1">
+        <!-- <div class="list List1">
             <div class="list-header">
                 <h2 class="list-title">List 1</h2>
                 <h2 class="list-date">04.28.25</h2>
@@ -34,7 +42,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff0000"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
                 </button>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <button class="create-list" onclick="window.location.href = '/new-list'">
@@ -44,11 +52,15 @@
 
     <div class="overlay"></div>
     <div class="deleteConfirmDiv"></div>
+    <div class="shareManagerDiv"></div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="/static/dashboard/checkbox.js"></script>
     <script src="/static/dashboard/loadLists.js"></script>
     <script src="/static/dashboard/deleteList.js"></script>
+    <script src="/static/dashboard/sendAlert.js"></script>
+    <script src="/static/dashboard/notificationStatus.js"></script>
+    <script src="/static/dashboard/ShareManager.js"></script>
 </body>
 </html>

@@ -12,17 +12,33 @@
         <h1 class="title">Create List</h1>
         <hr>
         <input type="text" class="list-name" placeholder="List Name">
-        <div class="add-item-form">
-            <hr>
-            <input type="text" class="item-name" placeholder="Item Name">
-            <input type="number" class="item-quantity" placeholder="Item Quantity">
-            <hr>
+        <div class="items">
+            <div class="add-item-form" id="1">
+                <hr>
+                <input type="text" class="item-name" placeholder="Item Name">
+                <input type="number" class="item-quantity" placeholder="Item Quantity">
+                <hr>
+            </div>
         </div>
         <button class="add-item">Add Item</button>
+        <label for="users">Users</label>
+        <textarea class="users" placeholder="user1, user2, etc" id="users"></textarea>
         <div class="actions">
-            <button class="save">Save</button>
+            <button class="save" onclick="saveList()">Save</button>
             <button class="cancel" onclick="window.location.href='/dashboard'">Cancel</button>
+        </div>  
+        <div class="error-wrapper hidden">
+            <span class="error-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff0000"><path d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+            </span>
+            <p class="error-message"></p>  
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="/static/dashboard/create_list/addItemDiv.js"></script>
+    <script src="/static/dashboard/create_list/saveList.js"></script>
+    <script src="/static/dashboard/create_list/misc.js"></script>
 </body>
 </html>

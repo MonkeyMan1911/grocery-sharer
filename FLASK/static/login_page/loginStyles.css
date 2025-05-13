@@ -129,3 +129,14 @@ body {
 .hidden {
     display: none;
 }
+
+.sign-up-button {
+    border: none;
+    color: blue;
+    background: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+.sign-up-button:hover {
+    text-decoration: underline;
+}

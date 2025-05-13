@@ -68,15 +68,15 @@ hr {
 }
 .actions button {
     width: 80px;
-    height: 35px;
+    height: 45px;
     border: none;
-    font-size: 16px;
+    font-size: 17px;
     border-radius: 10px; 
 }
 
 .cancel {
     background-color: rgb(87, 87, 87);
-    color: white;  
+    color: white; 
 }
 .save {
     background-color: #02d480;
@@ -103,7 +103,7 @@ hr {
     padding: 10px;
     margin-bottom: 20px;
     font-size: 17px;
-    width: 90px;
+    width: 95px;
     height: 25px;
     margin-left: 10px;
 }
@@ -111,4 +111,85 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.item-row {
+    position: relative;
+    height: 45px; /* Adjust based on input height + padding */
+    margin-bottom: 20px;
+}
+
+.delete-item {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-55%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.error-wrapper {
+    position: relative;
+}
+
+.error-wrapper p {
+    color: red;
+    padding-left: 40px;
+    font-size: 18px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.error-wrapper .error-icon {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-55%);
+    left: 110px;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    display: block;
+    color: white;
+    border: none;
+    padding-bottom: 5px;
+    font-size: 19px;
+    resize: none;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 29%;
+}
+.users {
+    display: block;
+    margin: 0 auto 40px auto;
+    width: 275px;
+    min-height: 40px;
+    max-width: 90%;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 5px;
+    font-size: 17px;
+    resize: none;
+    overflow: hidden;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.users:focus {
+    outline: 2px solid white;
+}
+.users::placeholder {
+    color: rgb(155, 155, 155);
 }

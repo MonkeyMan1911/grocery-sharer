@@ -3,9 +3,10 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(67, 67, 67);
+    background-color: rgb(54, 54, 54);
     height: 250px;
-    width: 400px;
+    width: 90%;
+    max-width: 390px;
     visibility: hidden;
     font-family: 'Arial', sans-serif;
 }
@@ -38,7 +39,7 @@
     background-color: red;
 }
 .cancel-delete {
-    background-color: lightgreen;
+    background-color: #02d480;
 }
 
 .confirmation-title {
@@ -56,4 +57,13 @@
     z-index: 999;
     opacity: 0;
     pointer-events: none;
+}
+
+hr {
+    color: #02d480;
+    background-color: #02d480;
+    border: none;
+    height: 2px;
+    width: 90%;
+    margin: 0 auto;
 }

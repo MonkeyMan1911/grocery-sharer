@@ -1,40 +1,41 @@
 {
     "lists": [
         {
-            "id": "id-1",
             "users": [
-                "user",
-                "admin"
+                "admin",
+                "user"
             ],
-            "title": "My List",
-            "date": "04.30.25",
+            "owner": "admin",
+            "extra_users": [
+                "user"
+            ],
+            "title": "New List",
+            "date": "05.13.25",
             "items": [
                 {
-                    "item_name": "Item 1",
-                    "quantity": 2,
-                    "checked": false
-                },
-                {
-                    "item_name": "Item 2",
-                    "quantity": 1,
+                    "item_name": "My item",
+                    "quantity": 9,
                     "checked": false
                 }
-            ]
+            ],
+            "id": "id-1"
         },
         {
-            "id": "id-2",
             "users": [
-                "admin"
+                "user"
             ],
-            "title": "My List2",
-            "date": "04.30.25",
+            "owner": "user",
+            "extra_users": null,
+            "title": "User list",
+            "date": "05.13.25",
             "items": [
                 {
-                    "item_name": "Item 1",
-                    "quantity": 2,
+                    "item_name": "item",
+                    "quantity": 0,
                     "checked": false
                 }
-            ]
+            ],
+            "id": "id-2"
         }
     ]
 }
