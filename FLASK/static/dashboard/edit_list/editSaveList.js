@@ -61,6 +61,7 @@ async function saveEditedList() {
             contentType: "application/json"
         })
         const data = response.result
+        console.log(data)
         if (data === "users_not_found") {
             const errorMessage = document.querySelector(".error-message")
             errorMessage.style.paddingLeft = "80px"

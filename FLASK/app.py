@@ -248,6 +248,7 @@ def edit_list_requests():
             existing_users.append(login["username"]) 
 
     if set(existing_users) == set(users):
+        request_used = False
         updated_request = {}
         updated_request["list_id"] = list_id
         updated_request["from"] = from_user
@@ -257,7 +258,18 @@ def edit_list_requests():
                 updated_request["request_id"] = request_dict["request_id"]
                 requests["requests"].remove(request_dict)
                 requests["requests"].append(updated_request)
-                break 
+                request_used = True
+                break
+        
+        if request_used == False:
+            next_id = 0
+            for request_dict in requests["requests"]:
+                last_id = request_dict["request_id"]
+                last_id = last_id.removeprefix("r-id-")
+                next_id = int(last_id) + 1
+
+            updated_request["request_id"] = f"r-id-{str(next_id)}"
+            requests["requests"].append(updated_request)
 
         with open(requests_file, "w") as file:
             json.dump(requests, file, indent=4)

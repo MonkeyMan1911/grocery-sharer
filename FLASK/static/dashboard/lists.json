@@ -2,12 +2,11 @@
     "lists": [
         {
             "users": [
-                "admin",
                 "user"
             ],
             "owner": "admin",
             "extra_users": [
-                "user"
+                "admin"
             ],
             "title": "New List",
             "date": "05.13.25",
@@ -24,18 +23,58 @@
             "users": [
                 "user"
             ],
-            "owner": "user",
-            "extra_users": null,
-            "title": "User list",
+            "owner": "admin0",
+            "extra_users": [
+                "admin"
+            ],
+            "title": "Some new list",
             "date": "05.13.25",
             "items": [
                 {
-                    "item_name": "item",
-                    "quantity": 0,
+                    "item_name": "Item",
+                    "quantity": 9,
                     "checked": false
                 }
             ],
             "id": "id-2"
+        },
+        {
+            "users": [
+                "admin"
+            ],
+            "owner": "admin",
+            "extra_users": [
+                "user"
+            ],
+            "title": "Another list",
+            "date": "05.13.25",
+            "items": [
+                {
+                    "item_name": "An item",
+                    "quantity": 9,
+                    "checked": false
+                }
+            ],
+            "id": "id-3"
+        },
+        {
+            "users": [
+                "user"
+            ],
+            "owner": "user",
+            "extra_users": [
+                "admin"
+            ],
+            "title": "Hi",
+            "date": "05.14.25",
+            "items": [
+                {
+                    "item_name": "banana",
+                    "quantity": 9,
+                    "checked": false
+                }
+            ],
+            "id": "id-4"
         }
     ]
 }

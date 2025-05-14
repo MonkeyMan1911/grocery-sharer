@@ -1,3 +1,12 @@
 {
-    "requests": []
+    "requests": [
+        {
+            "list_id": "id-4",
+            "from": "user",
+            "to": [
+                "admin"
+            ],
+            "request_id": "r-id-0"
+        }
+    ]
 }
